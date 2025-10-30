@@ -60,6 +60,18 @@ export default function Landing() {
       {/* Hero Section */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-primary opacity-10"></div>
+        
+        {/* Logo - Top Left */}
+        <div className="absolute top-6 left-6 z-20">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
+            <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
+              <Code2 className="w-6 h-6 text-primary-foreground" />
+            </div>
+            <span className="text-xl font-bold">Coding Club</span>
+          </div>
+        </div>
+
+        {/* Sign In & Theme Toggle - Top Right */}
         <div className="absolute top-6 right-6 z-20 flex items-center gap-3">
           <Button 
             variant="outline"
@@ -69,6 +81,7 @@ export default function Landing() {
           </Button>
           <ThemeToggle />
         </div>
+        
         <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
           <div className="text-center space-y-8 animate-fade-in">
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/20">
