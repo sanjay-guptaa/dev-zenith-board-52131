@@ -60,7 +60,13 @@ export default function Landing() {
       {/* Hero Section */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-primary opacity-10"></div>
-        <div className="absolute top-6 right-6 z-20">
+        <div className="absolute top-6 right-6 z-20 flex items-center gap-3">
+          <Button 
+            variant="outline"
+            onClick={() => navigate('/auth?mode=login')}
+          >
+            Sign In
+          </Button>
           <ThemeToggle />
         </div>
         <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
@@ -87,13 +93,6 @@ export default function Landing() {
               >
                 <Rocket className="mr-2 h-5 w-5" />
                 Get Started
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                onClick={() => navigate('/auth?mode=login')}
-              >
-                Sign In
               </Button>
             </div>
           </div>
