@@ -14,13 +14,75 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      event_registrations: {
+        Row: {
+          accepted_rules: boolean
+          created_at: string
+          email: string
+          event_id: number
+          full_name: string
+          id: string
+          phone: string | null
+          reason: string
+          user_id: string
+        }
+        Insert: {
+          accepted_rules?: boolean
+          created_at?: string
+          email: string
+          event_id: number
+          full_name: string
+          id?: string
+          phone?: string | null
+          reason: string
+          user_id: string
+        }
+        Update: {
+          accepted_rules?: boolean
+          created_at?: string
+          email?: string
+          event_id?: number
+          full_name?: string
+          id?: string
+          phone?: string | null
+          reason?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          updated_at: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          full_name?: string | null
+          id: string
+          updated_at?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      count_event_registrations: {
+        Args: { event_id_param: number }
+        Returns: number
+      }
     }
     Enums: {
       [_ in never]: never
