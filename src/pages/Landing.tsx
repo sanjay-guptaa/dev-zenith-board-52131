@@ -4,6 +4,7 @@ import { Code2, Users, Trophy, Rocket, Github, Linkedin, Mail } from "lucide-rea
 import { useAuth } from "@/hooks/useAuth";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const clubIncharges = [
   {
@@ -59,6 +60,9 @@ export default function Landing() {
       {/* Hero Section */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-primary opacity-10"></div>
+        <div className="absolute top-6 right-6 z-20">
+          <ThemeToggle />
+        </div>
         <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
           <div className="text-center space-y-8 animate-fade-in">
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/20">
