@@ -127,7 +127,7 @@ export default function Auth() {
           <CardHeader className="space-y-4">
             <div className="flex justify-center">
               <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <Code2 className="w-7 h-7 text-white" />
+                <Code2 className="w-7 h-7 text-primary-foreground" />
               </div>
             </div>
             <div className="text-center">

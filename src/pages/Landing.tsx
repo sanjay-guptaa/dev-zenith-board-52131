@@ -105,7 +105,7 @@ export default function Landing() {
             <Card className="group hover:shadow-glow transition-all duration-300 border-border/50 backdrop-blur-sm">
               <CardContent className="p-8 space-y-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Trophy className="w-7 h-7 text-white" />
+                  <Trophy className="w-7 h-7 text-primary-foreground" />
                 </div>
                 <h3 className="text-2xl font-bold">Compete & Win</h3>
                 <p className="text-muted-foreground">
@@ -118,7 +118,7 @@ export default function Landing() {
             <Card className="group hover:shadow-glow transition-all duration-300 border-border/50 backdrop-blur-sm">
               <CardContent className="p-8 space-y-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Code2 className="w-7 h-7 text-white" />
+                  <Code2 className="w-7 h-7 text-primary-foreground" />
                 </div>
                 <h3 className="text-2xl font-bold">Learn & Grow</h3>
                 <p className="text-muted-foreground">
@@ -131,7 +131,7 @@ export default function Landing() {
             <Card className="group hover:shadow-glow transition-all duration-300 border-border/50 backdrop-blur-sm">
               <CardContent className="p-8 space-y-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Users className="w-7 h-7 text-white" />
+                  <Users className="w-7 h-7 text-primary-foreground" />
                 </div>
                 <h3 className="text-2xl font-bold">Build Community</h3>
                 <p className="text-muted-foreground">
